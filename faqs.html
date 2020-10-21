@@ -52,11 +52,11 @@
                                 <a class="dropdown-item" href="faqs.html"><i class="fas fa-question text-dark"></i> FAQs</a>
                                 <a class="dropdown-item" href="https://github.com/FunctionIsland" target="_blank"><i class="fab fa-github text-dark"></i> <span>GitHub</span></a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="onboard.html"><i class="fas fa-wallet text-dark"></i> TRON Wallets</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#onboardModal"><i class="fas fa-wallet text-dark"></i> TRON Wallets</a>
                             </div>
                         </li>
                         
-                        <li class="nav-item"><a class="nav-link" href="names.html"><i class="fas fa-user text-white"></i> <span class="arcTag">Player</span></a></li>
+                        <li class="nav-item"><a class="nav-link"  href="#" data-toggle="modal" data-target="#myNameModal"><i class="fas fa-user text-white"></i> <span class="arcTag">Player</span></a></li>
                     </ul>
                 </div>
             </nav>
@@ -79,7 +79,7 @@
                 <!-- Row 1 -->
                 <div class="row">
                     <div class="col-md-6 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">What is Function Island?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -110,7 +110,7 @@
                     </div>
                     
                     <div class="col-md-6 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">How can I connect?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -148,7 +148,7 @@
                 <p><b class="text-warning">NOTICE:</b> This game is a high-risk game, and you should only play with TRX you can afford to lose.</p><br />
                 <div class="row">
                     <div class="col-md-4 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">What is D1VS Game?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -164,7 +164,7 @@
                     </div>
                     
                     <div class="col-md-4 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">How does it work?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -180,7 +180,7 @@
                     </div>
                     
                     <div class="col-md-4 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">Does Compounding also get a 10% fee?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -198,7 +198,7 @@
                 
                 <div class="row">
                     <div class="col-md-4 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">What is Pricefloor?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -214,7 +214,7 @@
                     </div>
                     
                     <div class="col-md-4 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">How does Pricefloor work?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -230,7 +230,7 @@
                     </div>
                     
                     <div class="col-md-4 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">Can I profit from D1VS?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -252,7 +252,7 @@
                 <h3>Development</h3>
                 <div class="row">
                     <div class="col-md-4 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">Is this Open Source?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -268,7 +268,7 @@
                     </div>
                     
                     <div class="col-md-4 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">Can I contribute?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -284,7 +284,7 @@
                     </div>
                     
                     <div class="col-md-4 text-center">
-                        <div class="card text-white glassPanel roundedCorners">
+                        <div class="card text-white glassPanel silverBorder roundedCorners">
                             <div class="card-header text-left">Future Plans?</div>
                             <div class="card-body">
                                 <div class="container">
@@ -302,7 +302,7 @@
             </div>
         </main>
         
-        <footer class="py-5 px-5 glassPanel rcTop text-white">
+        <footer class="py-5 px-5 glassPanel silverBorder rcTop text-white">
             <div class="row">
                 <div class="col text-center">
                     <b>Terms of Use</b>
@@ -324,10 +324,83 @@
             </ul>
         </nav>
         
-        <div class="modal" id="myModal">
+        <div class="modal" id="myNameModal">
             <div class="modal-dialog">
-                <div class="modal-content">
-                    <div id="modal-internal"></div>
+                <div class="modal-content bg-dark roundedCorners blueBorder">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-white">Edit Username</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <label class="text-white">Enter a name: </label>
+                                    <input type="text" name="newUsername" id="newUsername" onchange="checkAvailability()" class="form-control roundedCorners" placeholder="Enter your desired Username" />
+                                    <small>Max. 12 Letters/numbers, no spaces!</small>
+                                    <hr />
+                                    <p class="text-center">Username Available: <span id="availableStatus" class="text-white"></span></p>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button onclick="checkAvailability()" class="btn btn-block btn-md btn-warning roundedCorners">Check Availability</button>
+                                </div>
+                                        
+                                <div id="registerButtonArea" class="col text-center" style="display: none;">
+                                    <button onclick="registerName()" class="btn btn-block btn-md btn-success roundedCorners">Register (25 TRX)</button>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+                    <div class="modal-footer text-white">
+                        <button type="button" class="btn btn-danger roundedCorners" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="onboardModal">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark roundedCorners blueBorder">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-white">Get a Wallet</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="assets/img/tron.png" width="200px" height="200px" />
+                                    <p>
+                                        If you are visiting Function Island on a computer, you will need to install the TronLink extension for Chrome or Firefox. To get the best out of Function Island on your mobile device, you will need to download an app like Klever Wallet.
+                                    </p>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col text-center">
+                                    <a href="https://www.tronlink.org/" target="_blank" class="btn btn-block btn-md btn-success roundedCorners">Get TronLink</a>
+                                </div>
+                                        
+                                <div id="registerButtonArea" class="col text-center">
+                                    <a href="https://klever.io/" target="_blank" class="btn btn-block btn-md btn-success roundedCorners">Get Klever Wallet</a>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+                    <div class="modal-footer text-white">
+                        <button type="button" class="btn btn-danger roundedCorners" data-dismiss="modal">Close</button>
+                    </div>
+
                 </div>
             </div>
         </div>

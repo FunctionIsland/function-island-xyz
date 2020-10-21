@@ -52,11 +52,11 @@
                                 <a class="dropdown-item" href="faqs.html"><i class="fas fa-question text-dark"></i> FAQs</a>
                                 <a class="dropdown-item" href="https://github.com/FunctionIsland" target="_blank"><i class="fab fa-github text-dark"></i> <span>GitHub</span></a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="onboard.html"><i class="fas fa-wallet text-dark"></i> TRON Wallets</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#onboardModal"><i class="fas fa-wallet text-dark"></i> TRON Wallets</a>
                             </div>
                         </li>
                         
-                        <li class="nav-item"><a class="nav-link" href="names.html"><i class="fas fa-user text-white"></i> <span class="arcTag">Player</span></a></li>
+                        <li class="nav-item"><a class="nav-link"  href="#" data-toggle="modal" data-target="#myNameModal"><i class="fas fa-user text-white"></i> <span class="arcTag">Player</span></a></li>
                     </ul>
                 </div>
             </nav>
@@ -87,7 +87,7 @@
                 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card glassPanel roundedCorners">
+                        <div class="card glassPanel silverBorder roundedCorners">
                             <div class="card-header">My D1VS <small>(Approx. <span id="supplyPercentage">0</span>&#37; of the Total Supply)</small></div>
                             <div class="card-body">
                                 <div class="container">
@@ -95,10 +95,10 @@
                                         <div class="col text-center">
                                             <h3>
                                                 <img src="assets/img/beluga.png" width="25px" height="25px" /><br />
-                                                <span class="user-token-balance text-white">0.00000000</span> D1VS
+                                                <span class="user-token-balance text-white"><img src="assets/img/loading.svg" /></span> D1VS
                                             </h3>
                                             <p>
-                                                <span id="user-trx-balance">0.00000000</span> TRX ($<span id="user-usd-balance" class="text-white">0.00</span> USD)
+                                                <span id="user-trx-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> TRX ($<span id="user-usd-balance" class="text-white"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> USD)
                                             </p>
                                         </div>
                                     </div>
@@ -122,7 +122,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="card glassPanel roundedCorners">
+                        <div class="card glassPanel silverBorder roundedCorners">
                             <div class="card-header">My Earnings</div>
                             <div class="card-body">
                                 <div class="container">
@@ -130,7 +130,7 @@
                                         <div class="col text-center">
                                             <h3 class="text-white">
                                                 <img src="assets/img/tron.png" width="25px" height="25px" /><br />
-                                                <span class="user-dividends">0.00000000</span> TRX
+                                                <span class="user-dividends"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> TRX
                                             </h3>
                                             <p>My Dividends</p>
                                         </div>
@@ -138,7 +138,7 @@
                                         <div class="col text-center">
                                             <h3 class="text-white">
                                                 <img src="assets/img/dollar.png" width="25px" height="25px" /><br />
-                                                + &#36;<span id="user-dividends-usd" class="text-white">0.00</span> USD
+                                                + &#36;<span id="user-dividends-usd" class="text-white"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> USD
                                             </h3>
                                             <p>Growth on Reinvest</p>
                                         </div>
@@ -165,14 +165,15 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card glassPanel roundedCorners text-left">
+                        <div class="card glassPanel silverBorder roundedCorners text-left">
                             <div class="card-header">Buy D1VS</div>
                             <div class="card-body">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col text-center">
                                             <small>Current Price:</small>
-                                            <h1 class="text-white"><img src="assets/img/tron.png" width="35px" height="35px" /> <span id="rate-to-buy">0</span> TRX</h1>
+                                            <h1 class="text-white"><img src="assets/img/tron.png" width="35px" height="35px" /> <span id="rate-to-buy"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> TRX</h1>
+                                            <small>&#36;<span id="usdPriceOfOne">0</span> USD</small>
                                         </div>
                                     </div>
                                     <hr />
@@ -214,14 +215,15 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="card glassPanel roundedCorners text-left">
+                        <div class="card glassPanel silverBorder roundedCorners text-left">
                             <div class="card-header">Sell D1VS</div>
                             <div class="card-body">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col text-center">
                                             <small>Current Value:</small>
-                                            <h1 class="text-white"><img src="assets/img/tron.png" width="35px" height="35px" /> <span id="rate-to-sell">0</span> TRX</h1>
+                                            <h1 class="text-white"><img src="assets/img/tron.png" width="35px" height="35px" /> <span id="rate-to-sell"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> TRX</h1>
+                                            <small>&#36;<span id="usdValueOfOne">0</span> USD</small>
                                         </div>
                                     </div>
                                     <hr />
@@ -275,7 +277,7 @@
                 </div>
                 <hr />
                 
-                <div class="row jumbotron glassPanel roundedCorners text-dark">
+                <div class="row jumbotron glassPanel silverBorder roundedCorners text-dark">
                     <div class="container">
                         <div class="row">
                             <div class="col text-center">
@@ -291,7 +293,7 @@
                     </div>
                 </div>
 
-                <div class="row jumbotron glassPanel roundedCorners text-dark">
+                <div class="row jumbotron glassPanel silverBorder roundedCorners text-dark">
                     <div class="container">
                         <div class="row"><div class="col text-white text-center"><h3>Contract Value Data</h3></div></div>
                         <div class="row">
@@ -299,7 +301,7 @@
                                 <br />
                                 <h3 class="text-danger">
                                     <span class="badge badge-pill badge-danger">
-                                        <span id="contract-trx-balance">0</span> TRX
+                                        <span id="contract-trx-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> TRX
                                     </span>
                                 </h3>
                                 <p class="text-white">Contract Holdings</p>
@@ -309,7 +311,7 @@
                                 <br />
                                 <h3 class="text-white">
                                     <span class="badge badge-pill badge-success">
-                                        &#36;<span style="display: inline" id="supply-value-usd">0</span> USD
+                                        &#36;<span style="display: inline" id="supply-value-usd"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> USD
                                     </span>
                                 </h3>
                                 <p class="text-white">USD Value</p>
@@ -319,7 +321,7 @@
                                 <br />
                                 <h3 class="text-white">
                                     <span class="badge badge-pill badge-light">
-                                        <span style="display: inline" id="contract-token-balance">0</span> DIVS
+                                        <span style="display: inline" id="contract-token-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> DIVS
                                     </span>
                                 </h3>
                                 <p class="text-white">Total Supply</p>
@@ -329,7 +331,7 @@
                                 <br />
                                 <h3 class="text-danger">
                                     <span class="badge badge-pill badge-warning">
-                                        <span id="supply-value-btc">0</span> BTC
+                                        <span id="supply-value-btc"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> BTC
                                     </span>
                                 </h3>
                                 <p class="text-white">Game value (in BTC)</p>
@@ -339,7 +341,7 @@
                                 <br />
                                 <h3 class="text-danger">
                                     <span class="badge badge-pill badge-info">
-                                        <span id="supply-value-eth">0</span> ETH
+                                        <span id="supply-value-eth"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> ETH
                                     </span>
                                 </h3>
                                 <p class="text-white">Game value (in ETH)</p>
@@ -350,7 +352,7 @@
             </div>
         </main>
         
-        <footer id="theFooter" class="py-5 px-5 glassPanel rcTop text-white">
+        <footer id="theFooter" class="py-5 px-5 glassPanel silverBorder rcTop text-white">
             <div class="row">
                 <div class="col text-center">
                     <b>Terms of Use</b>
@@ -565,6 +567,87 @@
             </div>
         </div>
         
+        <div class="modal" id="myNameModal">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark roundedCorners blueBorder">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-white">Edit Username</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <label class="text-white">Enter a name: </label>
+                                    <input type="text" name="newUsername" id="newUsername" onchange="checkAvailability()" class="form-control roundedCorners" placeholder="Enter your desired Username" />
+                                    <small>Max. 12 Letters/numbers, no spaces!</small>
+                                    <hr />
+                                    <p class="text-center">Username Available: <span id="availableStatus" class="text-white"></span></p>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button onclick="checkAvailability()" class="btn btn-block btn-md btn-warning roundedCorners">Check Availability</button>
+                                </div>
+                                        
+                                <div id="registerButtonArea" class="col text-center" style="display: none;">
+                                    <button onclick="registerName()" class="btn btn-block btn-md btn-success roundedCorners">Register (25 TRX)</button>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+                    <div class="modal-footer text-white">
+                        <button type="button" class="btn btn-danger roundedCorners" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="onboardModal">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark roundedCorners blueBorder">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-white">Get a Wallet</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="assets/img/tron.png" width="200px" height="200px" />
+                                    <p>
+                                        If you are visiting Function Island on a computer, you will need to install the TronLink extension for Chrome or Firefox. To get the best out of Function Island on your mobile device, you will need to download an app like Klever Wallet.
+                                    </p>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col text-center">
+                                    <a href="https://www.tronlink.org/" target="_blank" class="btn btn-block btn-md btn-success roundedCorners">Get TronLink</a>
+                                </div>
+                                        
+                                <div id="registerButtonArea" class="col text-center">
+                                    <a href="https://klever.io/" target="_blank" class="btn btn-block btn-md btn-success roundedCorners">Get Klever Wallet</a>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+                    <div class="modal-footer text-white">
+                        <button type="button" class="btn btn-danger roundedCorners" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
@@ -573,7 +656,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
         
 		<script src="assets/dapps/hourglass.js"></script>
-        <script src="assets/dapps/usernameSystem/viewUsername.js"></script>
+        <script src="assets/dapps/usernameSystem/nameRegistry.js"></script>
+        <script>main()</script>
         
 	   <script type="text/javascript">
            var clipboard = new ClipboardJS('#copyButton');
