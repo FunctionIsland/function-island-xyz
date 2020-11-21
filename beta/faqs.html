@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+
+    <link rel="icon" href="/static/halfmoon/img/halfmoon-fav-alt.png">
+    <title>Function Island | Dapps and Games on TRON</title>
+
+    <!-- Framework (Halfmoon, animate, etc) -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css//animate-css/animate.css" />
+    <link rel="stylesheet" href="assets/css//animate-css/customisations.css" />
+    <link rel="stylesheet" href="assets/css//animate-css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Alertify CSS -->
+    <link rel="stylesheet" href="assets/css/alertify.min.css">
+    <link rel="stylesheet" href="assets/css/themes/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true">
+    <div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" data-sidebar-type="default">
+        <div class="sticky-alerts"></div>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+            <a href="#" class="navbar-brand ml-10 ml-sm-20">
+                <span class="d-none d-sm-flex">Function Island</span>
+            </a>
+            <div class="navbar-nav ml-auto">
+                <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    <span class="sr-only">Toggle dark mode</span>
+                </button>
+
+                <a class="btn btn-danger mr-5" href="#receiveTRXModal">
+                    <span id="myTronBalance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> TRX <small>(<span id="myTronAddress"></span>)</small>
+                </a>
+            </div>
+        </nav>
+
+        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <h5 class="sidebar-title">Function Island</h5>
+                <div class="sidebar-divider"></div>
+                <a href="index.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-home" aria-hidden="true"></i></span> Home</a>
+                <a href="divs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-dollar-sign" style="color: #00ff62;" aria-hidden="true"></i></span> My D1VS</a>
+                <a href="faqs.html" class="sidebar-link sidebar-link-with-icon active animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-question" style="color: #ce0000;" aria-hidden="true"></i></span> Help &amp; FAQs</a>
+                <br />
+                <h5 class="sidebar-title">Resources</h5>
+                <div class="sidebar-divider"></div>
+                <a href="#rainmakerModal" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fa fa-globe" aria-hidden="true"></i></span> Pricefloor</a>
+                <a href="#referralsModal" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fa fa-globe" aria-hidden="true"></i></span> Referrals</a>
+                <a href="#statisticModal" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fa fa-globe" aria-hidden="true"></i></span> Statistics</a>
+                <div class="sidebar-divider"></div>
+                <br />
+                <div class="row">
+                    <div class="col text-center animatedZoom"><a href="https://twitter.com/FunctionIsland" target="_blank"><i class="fab fa-twitter text-white"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://t.me/FunctionIsland" target="_blank"><i class="fab fa-telegram text-white"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://discord.gg/FmCEbPU" target="_blank"><i class="fab fa-discord text-white"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://github.com/FunctionIsland" target="_blank"><i class="fab fa-github text-white"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <div class="row row-eq-spacing-lg">
+                    <div class="col-lg-9">
+
+                        <section id="faqsSection" class="animate__animated animate__fadeIn">
+                            <div class="row">
+                            <div class="col text-center">
+                                <br />
+                                <h3 class="text-white">Help &amp; FAQs</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <div class="card text-white glassPanel silverBorder roundedCorners">
+                                    <div class="card-header text-left">What is D1VS Game?</div>
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col text-left">
+                                                    <p>D1VS is an hourglass smart contract, enabling anyone holding &quot;D1VS&quot; to earn TRX dividends, proportionate to supply shares held. Price and value fluctuates at the mercy of holder actions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                <div class="card text-white glassPanel silverBorder roundedCorners">
+                                    <div class="card-header text-left">Why doesn&apos;t D1VS show in my wallet?</div>
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col text-left">
+                                                    <p>D1VS is a special kind of token that may not show correctly with some wallets. So long as you can see your D1VS on the website, your D1VS are safe and ready to be transferred, sold or HODLed on further!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                <div class="card text-white glassPanel silverBorder roundedCorners">
+                                    <div class="card-header text-left">Does Compounding also get a 10% fee?</div>
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col text-left">
+                                                    <p>The Compound function of the D1VS game calls the buy function, so yes - 10% of your TRX Dividends will be distributed to D1VS holders when you compound.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                <div class="card text-white glassPanel silverBorder roundedCorners">
+                                    <div class="card-header text-left">Can I profit from D1VS?</div>
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col text-left">
+                                                    <p>There is possibility of earning TRX from holding D1VS over time - however, keep in mind that D1VS is a game, not an investment platform. Only spend TRX you can afford to lose - D1VS value is at the mercy of the holders!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+                        </section>
+                         
+                        <hr />
+                        <br />
+
+                        <footer class="blackPanel" style="margin-bottom: 48px;">
+                            <div class="container">
+                                <br />
+                                <div class="row">
+                                    <div class="col text-center text-white">
+                                        <h4 class="text-white">Disclaimer</h4>
+                                        <small class="text-white">
+                                            &quot;Function Island&quot;, is provided on an &quot;As-Is&quot; basis, with zero guarantee of bug-free operation, profit or stability.<br />
+                                            The Dapps and games hosted on this site have <b>NOT</b> been audited - rigorous public audit is encouraged!<br />
+                                            You should only use or deposit funds you are willing to lose on Function Island.<br />
+                                            <b>NOBODY EXCEPT YOU</b> will be held responsible for any losses you may incur as a result of using Function Island.
+                                        </small>
+                                        <br />
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <!-- DESKTOP ONLY SIDEBAR - RIGHT -->
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="content">
+                            <h2 class="content-title font-size-20">Google Ad <small>(asdf)</small></h2>
+                            <p>This is the text of a Google Ad, which will help us to pay for the website hosting and other good stuff...</p>
+                            <small>
+                                <a href="#">Learn More</a> | <a href="#">Report Ad</a>
+                            </small>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col text-center">
+                                <h4>Dapp Monitors</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center animatedZoom">
+                                <a href="https://dappradar.com/tron/high-risk/function-island" target="_blank"><img src="assets/img/monitor-logos/dappradar.png" width="30px" height="30px" /></a>
+                            </div>
+
+                            <div class="col text-center animatedZoom">
+                                <a href="https://www.stateofthedapps.com/dapps/function-island" target="_blank"><img src="assets/img/monitor-logos/stateofthedapps.png" width="30px" height="30px" /></a>
+                            </div>
+                        </div>
+                        <br />
+
+                        <div class="row">
+                            <div class="col text-center animatedZoom">
+                                <a href="https://dapp.review/dapp/Function-Island-D1VS" target="_blank"><img src="assets/img/monitor-logos/dappreview.jpg" width="30px" height="30px" /></a>
+                            </div>
+
+                            <div class="col text-center animatedZoom">
+                                <a href="https://www.dappstats.com/dapp/function-island-d1vs" target="_blank">
+                                    <img src="assets/img/monitor-logos/dappstats.png" width="30px" height="25px" />
+                                </a>
+                            </div>
+
+                            <div class="col text-center animatedZoom">
+                                <a href="https://dapponline.io/dapp-detail/3771" target="_blank"><img src="assets/img/monitor-logos/dapponline.png" width="30px" height="30px" /></a>
+                            </div>
+                        </div>
+                        <hr />
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <a class="twitter-timeline" href="https://twitter.com/FunctionIsland?ref_src=twsrc%5Etfw" data-tweet-limit="1" data-chrome="noheader nofooter noborders noscrollbar">Tweets by FunctionIsland</a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-fixed-bottom">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-question-circle-o mr-5" aria-hidden="true"></i> Help</a></li>
+            </ul>
+            <span class="navbar-text">Made with &lt;3, Function Island</span>
+        </nav>
+    </div>
+
+    <!-- MODALS -->
+    <div class="modal" id="onboardModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">Get a Wallet</h5>
+                <div class="row">
+                    <div class="col text-center"><img src="assets/img/function-glyphs/computer.png" width="150px" height="150px" /></div>
+                    <div class="col text-center"><br /><img src="assets/img/function-glyphs/phone.png" width="100px" height="105px" /></div>
+                </div>
+                <p>
+                    If you are visiting Function Island on a computer, you will need to install the TronLink extension for Chrome or Firefox. To get the best out of Function Island on your mobile device, you will need to download an app like Klever Wallet.<br />
+                    Please be sure to back up your keys and/or seeds - Nobody can help you recover your crypto, except you!
+                </p>
+                <div class="text-right mt-20">
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="https://klever.io" target="_blank" class="btn btn-primary" role="button">Klever.io</a>
+                    <a href="https://tronlink.org" target="_blank" class="btn btn-secondary" role="button">Tronlink.org</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="rainmakerModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">D1VS Pricefloor </h5>
+                <div class="row">
+                    <div class="col text-center">
+                        <p>
+                            <b>Pricefloor Earnings: </b> <span class="text-danger"><span id="rainmakerDividends">0</span> TRX</span><br />
+                            <b>Supply Percentage: </b> <span class="text-success"><span id="supplyFloorPercentage">0</span>&#37;</span>
+                        </p>
+                    </div>
+                </div>
+
+                <hr />
+                <br />
+                <div class="row">
+                    <div class="col text-center">
+                        <b>
+                            <img src="assets/img/logo.png" width="45px" height="45px" /><br />
+                            <span id="rainmakerTokens">0</span> D1VS
+                        </b>
+                    </div>
+                    
+                    <div class="col text-center">
+                        <b>
+                            <img src="assets/img/tron.png" width="45px" height="45px" /><br />
+                            <span id="floorTRX">0</span> TRX
+                        </b>
+                    </div>
+                    
+                    <div class="col text-center">
+                        <b>
+                            <img src="assets/img/dollar.png" width="45px" height="45px" /><br />
+                            &#36;<span id="floor-value-usd">0</span>
+                        </b>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <h3></h3>
+                        <small>Held by PriceFloor</small>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col text-center">
+                        <br />
+                        <small>
+                            The button below tells the PriceFloor contract to buy as much D1VS as it can with the Dividends it has earned. This has the effect of raising the minimum price which D1VS will ever be sold at - and since the Price Floor contract can never sell, transfer or destroy its D1VS, this minimum value will only grow larger over time as the D1VS platform is used.
+                        </small>
+                        <br />
+                        <br />
+                        <button id="makeItRainTx" class="btn btn-block btn-md btn-success roundedCorners" href="#">Raise Price Floor</button>
+                    </div>
+                </div>
+                <br />
+
+                <div class="text-right mt-20">
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="https://tronscan.org/#/contract/TRrLSZknfHCS8ejYoffGsH5EeRQ4WwT2Mt/code" target="_blank" class="btn btn-primary">View Contract</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="usernameModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">Username </h5>
+                <div class="row">
+                    <div class="col text-center">
+                        <label class="text-white">Enter a name: </label>
+                        <input type="text" name="newUsername" id="newUsername" onchange="checkAvailability()" class="form-control roundedCorners" placeholder="Enter your desired Username" />
+                        <small>Max. 12 Letters/numbers, no spaces!</small>
+                        <hr />
+                        <p class="text-center">Username Available: <span id="availableStatus" class="text-white"></span></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <button onclick="checkAvailability()" class="btn btn-block btn-md btn-warning roundedCorners">Check Availability</button>
+                    </div>
+
+                    <div id="registerButtonArea" class="col text-center" style="display: none;">
+                        <button onclick="registerName()" class="btn btn-block btn-md btn-success roundedCorners">Register (25 TRX)</button>
+                    </div>
+                </div>
+                <br />
+
+                <div class="text-right mt-20">
+                    <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="https://www.t.me/D1VSFeed" target="_blank" class="btn btn-primary" role="button">Join the Channel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="termsModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">Terms of Use </h5>
+                <div class="row">
+                    <div class="col text-center">
+                        <p>
+                            &quot;Function Island&quot;, is provided on an &quot;As-Is&quot; basis, with zero guarantee of bug-free operation, profit or stability.<br />
+                            The Dapps and games hosted on this site have <b>NOT</b> been audited - You should only use or deposit funds you are willing to lose on Function Island.<br />
+                            <b>NOBODY EXCEPT YOU</b> will be held responsible for any losses you may incur as a result of using Function Island.
+                        </p>
+                    </div>
+                </div>
+                <br />
+
+                <div class="text-right mt-20">
+                    <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="https://www.t.me/D1VSFeed" target="_blank" class="btn btn-primary" role="button">Join the Channel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="referralsModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">Referral Link</h5>
+                <div class="row">
+                    <div class="col text-center">
+                        <input id="ref-url" class="form-control text-center text-secondary" value="" readonly="" /><br />
+                        <small class="text-white">When others use your link to buy D1VS, you get a 3&#37; commission!</small>
+                    </div>
+                </div>
+                <br />
+
+                <div class="text-right mt-20">
+                    <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <button type="button" id="copyButton" data-clipboard-target="#ref-url" onclick="return false;" class="btn btn-success">Copy Link</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="statisticModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">Platform Statistics </h5>
+                <div class="row">
+                    <div class="col text-center">
+                        <br />
+                        
+                        <table class="table">
+                            <tr><td><b>Contract Holdings</b></td><td class="text-danger"><span id="contract-trx-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> TRX</td></tr>
+                            <tr><td><b>USD Value</b></td><td class="text-success">&#36;<span style="display: inline" id="supply-value-usd"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> USD</td></tr>
+                            <tr><td><b>Total Supply</b></td><td><span id="contract-token-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> D1VS</td></tr>
+                            <tr><td><b>Contract Value (BTC)</b></td><td class="text-secondary"><span id="supply-value-btc"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> BTC</td></tr>
+                            <tr><td><b>Contract Value (ETH)</b></td><td style="color: #00a7ff;"><span id="supply-value-eth"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> ETH</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="text-right mt-20">
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="monitorModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">D1VS Monitor </h5>
+                <div class="row">
+                    <div class="col text-center"><img src="assets/img/tron.png" width="200px" height="200px" /></div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <small>
+                            D1VS Monitor is a specialised Telegram channel, which enables you to follow the action of every Buy, Sell, Reinvest and Withdraw of the game! Price and value of D1VS is reported with every action, too - so you won't miss a thing!<br />
+                            <br />
+                            It is recommended to mute the channel, or you might end up with lots of notifications very quickly!
+                        </small>
+                    </div>
+                </div>
+                <br />
+
+                <div class="text-right mt-20">
+                    <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="https://www.t.me/D1VSFeed" target="_blank" class="btn btn-primary" role="button">Join the Channel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="receiveTRXModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">Receive TRX</h5>
+                <div class="row">
+                    <div class="col text-center">
+                        <img id="qrImage" src="#" class="roundedCorners" alt="Your Crop Address as a QR Code"><br />
+                        <small>Scan this QR Code to tip <span class="username">Player</span>!</small>
+                        <br />
+                        <br />
+                        <b>TRON Address: </b><br />
+                        <small id="myTronAddr"></small>
+                    </div>
+                </div>
+                <br />
+
+                <div class="text-right mt-20">
+                    <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="#" class="btn btn-success" role="button">Done</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/halfmoon.js"></script>
+    <script src="assets/js/halfmoon.min.js"></script>
+
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/alertify.min.js"></script>
+    <script src="assets/js/clipboard.min.js"></script>
+    <script src="assets/js/common.min.js"></script>
+    <script src="assets/js/tronweb.js"></script>
+    
+    <script src="assets/dapps/hourglass.js"></script>
+    <script src="assets/dapps/usernames.js"></script>
+
+    <script>
+        getUsername()
+    </script>
+
+    <script type="text/javascript">
+        function toastAlert(_alertTitle, _alertContent) {
+            var alertContent = _alertContent;
+            var alertTitle = _alertTitle;
+            halfmoon.initStickyAlert({
+                content: alertContent,
+                title: alertTitle
+            })
+        }
+
+        function parentToggleDarkmode() {
+            window.parent.toggleDarkModeFromChild();
+        }
+        if (window !== window.parent) {
+            halfmoon.toggleDarkMode = parentToggleDarkmode;
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        var clipboard = new ClipboardJS('#copyButton');
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+            alertify.success('Copied Link');
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+            alertify.error('Did not Copy Link');
+        });
+
+        function getCookie(name) {
+            var dc = document.cookie;
+            var prefix = name + "=";
+            var begin = dc.indexOf("; " + prefix);
+
+            if (begin == -1) {
+                begin = dc.indexOf(prefix);
+                if (begin != 0) return null;
+            } else {
+                begin += 2;
+                var end = document.cookie.indexOf(";", begin);
+                if (end == -1) {
+                    end = dc.length;
+                }
+            }
+
+            return decodeURI(dc.substring(begin + prefix.length, end));
+        }
+
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var theCookie = "masternode=" + url.searchParams.get("masternode");
+
+        if (url.searchParams.get("masternode") !== null) {
+            var toSet = "masternode=" + url.searchParams.get("masternode");
+            console.log(url.searchParams.get("masternode"));
+            document.cookie = theCookie;
+        } else {
+
+            var refCookie = getCookie("masternode");
+            console.log(refCookie);
+            if (refCookie === null) {
+                console.log("Ref cookie was null. Setting to default.");
+                document.cookie = "masternode=TRrLSZknfHCS8ejYoffGsH5EeRQ4WwT2Mt";
+            } else {
+                // do nothing if the cookie is already set and there is no new mnode link
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+.animate__animated.animate__fadeIn {
+  --animate-delay: 2.5s;
+  --animate-duration: 2.5s;
+}
