@@ -30,7 +30,7 @@
     <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true">
+<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
     <div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" data-sidebar-type="default">
         <div class="sticky-alerts"></div>
         <nav class="navbar">
@@ -72,10 +72,10 @@
                 <div class="sidebar-divider"></div>
                 <br />
                 <div class="row">
-                    <div class="col text-center animatedZoom"><a href="https://twitter.com/FunctionIsland" target="_blank"><i class="fab fa-twitter text-white"></i></a></div>
-                    <div class="col text-center animatedZoom"><a href="https://t.me/FunctionIsland" target="_blank"><i class="fab fa-telegram text-white"></i></a></div>
-                    <div class="col text-center animatedZoom"><a href="https://discord.gg/FmCEbPU" target="_blank"><i class="fab fa-discord text-white"></i></a></div>
-                    <div class="col text-center animatedZoom"><a href="https://github.com/FunctionIsland" target="_blank"><i class="fab fa-github text-white"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://twitter.com/FunctionIsland" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://t.me/FunctionIsland" target="_blank"><i class="fab fa-telegram"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://discord.gg/FmCEbPU" target="_blank"><i class="fab fa-discord"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://github.com/FunctionIsland" target="_blank"><i class="fab fa-github"></i></a></div>
                 </div>
             </div>
         </div>
@@ -90,25 +90,25 @@
                             <div class="col text-center">
                                 <h3>D1VS (Hourglass)</h3>
                                 <small>Buy/Sell/Hodl D1VS, and earn TRX Dividends along the way!</small><br />
-                                <small><a href="https://tronscan.org/#/contract/TJ9KV8DdVhVbPAMWVHEHYnXBA4vqLwk6Jr/code" target="_blank" class="text-white">View Contract</a>
+                                <small><a href="https://tronscan.org/#/contract/TJ9KV8DdVhVbPAMWVHEHYnXBA4vqLwk6Jr/code" target="_blank">View Contract</a>
                                 </small>
                             </div>
                         </div>
                         
                         <div class="row">
                             <div class="col-md-6 text-left">
-                                <div class="card glassPanel silverBorder roundedCorners">
+                                <div class="card">
                                     <h4 class="card-title">My D1VS</h4>
                                     <div class="card-body">
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col text-center">
                                                     <h3>
-                                                        <img src="assets/img/function-logos/beluga.png" width="25px" height="25px" /> <span class="user-token-balance text-white"><img src="assets/img/loading.svg" /></span> D1VS
+                                                        <img src="assets/img/function-logos/beluga.png" width="25px" height="25px" /> <span class="user-token-balance"><img src="assets/img/loading.svg" /></span> D1VS
                                                     </h3>
                                                     <small>Approx. <span id="supplyPercentage">0</span>&#37; of the Total Supply</small>
                                                     <p>
-                                                        <span id="user-trx-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> TRX ($<span id="user-usd-balance" class="text-white"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> USD)
+                                                        <span id="user-trx-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> TRX ($<span id="user-usd-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> USD)
                                                     </p>
                                                 </div>
                                             </div>
@@ -119,7 +119,7 @@
                                                 </div>
 
                                                 <div class="col text-center">
-                                                    <a class="btn btn-block btn-danger text-white" href="#sellDivsModal">Sell D1VS</a>
+                                                    <a class="btn btn-block btn-danger" href="#sellDivsModal">Sell D1VS</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -135,23 +135,23 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col text-center">
-                                                    <h3 class="text-white">
+                                                    <h3>
                                                         <img src="assets/img/tron.png" width="25px" height="25px" /> <span class="user-dividends"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> TRX
                                                     </h3>
                                                     <small>Reinvest your dividends to earn faster!</small>
                                                     <p>
-                                                        <span id="user-reinvest">0.00</span> D1VS (&#36;<span id="user-dividends-usd" class="text-white"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> USD)
+                                                        <span id="user-reinvest">0.00</span> D1VS (&#36;<span id="user-dividends-usd"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> USD)
                                                     </p>
                                                 </div>
                                             </div>
 
                                             <div class="row">
                                                 <div class="col text-center">
-                                                    <button class="btn btn-block btn-dark silverBorder text-white btn-reinvest roundedCorners"><b><i class="fas fa-recycle"></i> Reinvest</b></button>
+                                                    <button class="btn btn-block btn-reinvest"><b><i class="fas fa-recycle"></i> Reinvest</b></button>
                                                 </div>
 
                                                 <div class="col text-center">
-                                                    <button class="btn btn-block btn-dark silverBorder text-white btn-withdraw roundedCorners"><i class="fas fa-hand-holding-usd"></i> Withdraw</button>
+                                                    <button class="btn btn-block btn-withdraw"><i class="fas fa-hand-holding-usd"></i> Withdraw</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -178,9 +178,9 @@
                             <div class="container">
                                 <br />
                                 <div class="row">
-                                    <div class="col text-center text-white">
-                                        <h4 class="text-white">Disclaimer</h4>
-                                        <small class="text-white">
+                                    <div class="col text-center">
+                                        <h4>Disclaimer</h4>
+                                        <small>
                                             &quot;Function Island&quot;, is provided on an &quot;As-Is&quot; basis, with zero guarantee of bug-free operation, profit or stability.<br />
                                             The Dapps and games hosted on this site have <b>NOT</b> been audited - rigorous public audit is encouraged!<br />
                                             You should only use or deposit funds you are willing to lose on Function Island.<br />
@@ -211,11 +211,11 @@
                         </div>
                         <div class="row">
                             <div class="col text-center animatedZoom">
-                                <a href="https://dappradar.com/tron/high-risk/function-island" target="_blank"><img src="assets/img/monitor-logos/dappradar.png" width="30px" height="30px" /></a>
+                                <a href="https://dappradar.com/tron/high-risk/function-island" target="_blank"><img src="assets/img/monitor-logos/dappradar.png" width="30px" height="30px" style="background-color: rgba(0,0,0,0.75); border-radius: 5px;" /></a>
                             </div>
 
                             <div class="col text-center animatedZoom">
-                                <a href="https://www.stateofthedapps.com/dapps/function-island" target="_blank"><img src="assets/img/monitor-logos/stateofthedapps.png" width="30px" height="30px" /></a>
+                                <a href="https://www.stateofthedapps.com/dapps/function-island" target="_blank"><img src="assets/img/monitor-logos/stateofthedapps.png" width="30px" height="30px" style="background-color: rgba(0,0,0,0.75); border-radius: 5px;" /></a>
                             </div>
                         </div>
                         <br />
@@ -249,9 +249,7 @@
         </div>
 
         <nav class="navbar navbar-fixed-bottom">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-question-circle-o mr-5" aria-hidden="true"></i> Help</a></li>
-            </ul>
+            <ul class="navbar-nav ml-auto"></ul>
             <span class="navbar-text">Made with &lt;3, Function Island</span>
         </nav>
     </div>
@@ -265,7 +263,7 @@
                 <div class="row">
                     <div class="col text-center">
                         <small>Current Price:</small>
-                        <h1 class="text-white"><img src="assets/img/tron.png" width="35px" height="35px" /> <span id="rate-to-buy"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> TRX</h1>
+                        <h1><img src="assets/img/tron.png" width="35px" height="35px" /> <span id="rate-to-buy"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> TRX</h1>
                         <small>&#36;<span id="usdPriceOfOne">0</span> USD</small>
                     </div>
                 </div>
@@ -275,7 +273,7 @@
                     <!-- TRX Buy Input -->
                     <div class="col text-center">
                         <label class="text-left">TRX to Spend:</label>
-                        <input type="number" class="form-control roundedCorners buy-input" min="1" step="1" placeholder="TRX to spend" onkeypress="return event.charCode >= 48 && event.charCode <= 57" title="Numbers only" />
+                        <input type="number" class="form-control buy-input" min="1" step="1" placeholder="TRX to spend" onkeypress="return event.charCode >= 48 && event.charCode <= 57" title="Numbers only" />
                         <b class="text-center">WHOLE NUMBERS ONLY, NO DECIMALS</b><br />
                         <small>Every D1VS purchase incurs a 10&#37; Dividend Fee.</small>
                     </div>
@@ -296,7 +294,7 @@
                 </div>
 
                 <div class="row">
-                    <button class="btn btn-block btn-lg btn-success btn-buy buy-token-button roundedCorners" id="buyTokensButton" style="display: none;">Buy D1VS</button>
+                    <button class="btn btn-block btn-lg btn-success btn-buy buy-token-button" id="buyTokensButton" style="display: none;">Buy D1VS</button>
                 </div>
                 <div class="text-right mt-20">
                     <a href="#" class="btn mr-5" role="button">Close</a>
@@ -313,7 +311,7 @@
                 <div class="row">
                     <div class="col text-center">
                         <small>Current Value:</small>
-                        <h1 class="text-white"><img src="assets/img/tron.png" width="35px" height="35px" /> <span id="rate-to-sell"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> TRX</h1>
+                        <h1><img src="assets/img/tron.png" width="35px" height="35px" /> <span id="rate-to-sell"><img src="assets/img/loading.svg" width="18px" height="18px" /></span> TRX</h1>
                         <small>&#36;<span id="usdValueOfOne">0</span> USD</small>
                     </div>
                 </div>
@@ -322,7 +320,7 @@
                 <div class="row">
                     <div class="col text-center">
                         <label class="text-left">D1VS to Sell:</label>
-                        <input type="number" class="form-control roundedCorners sell-input" min="1" step="1" placeholder="Amount of D1VS" onkeypress="return event.charCode >= 48 && event.charCode <= 57" title="Numbers only">
+                        <input type="number" class="form-control sell-input" min="1" step="1" placeholder="Amount of D1VS" onkeypress="return event.charCode >= 48 && event.charCode <= 57" title="Numbers only">
                         <b class="text-center">WHOLE NUMBERS ONLY, NO DECIMALS</b><br />
                         <small>Every D1VS sale incurs a 10&#37; Dividend Fee.</small>
                     </div>
@@ -332,18 +330,18 @@
                 <div class="row">
                     <div class="col text-left">
                         <label>TRX Value:</label>
-                        <input type="text" class="form-control roundedCorners token-input-sell" readonly="" value="0.00000000">
+                        <input type="text" class="form-control token-input-sell" readonly="" value="0.00000000">
                     </div>
 
                     <div class="col text-left">
                         <label>USD Value:</label>
-                        <input type="text" class="form-control roundedCorners" placeholder="USD Value" id="usdSellValue" readonly="" />
+                        <input type="text" class="form-control" placeholder="USD Value" id="usdSellValue" readonly="" />
                         <small>&#42;Approx. only</small>
                     </div>
                 </div>
 
                 <div class="row">
-                    <button id="sellButton" class="btn btn-block btn-lg btn-danger btn-buy sell-token-button roundedCorners" style="display: none;">Sell D1VS</button>
+                    <button id="sellButton" class="btn btn-block btn-lg btn-danger btn-buy sell-token-button" style="display: none;">Sell D1VS</button>
                 </div>
                 <div class="text-right mt-20">
                     <a href="#" class="btn mr-5" role="button">Close</a>
@@ -382,11 +380,11 @@
                 <div class="row">
                     <div class="col-md-4">
                         <label>Quantity</label>
-                        <input type="text" class="form-control roundedCorners transfer-input" placeholder="D1VS to Send..." />
+                        <input type="text" class="form-control transfer-input" placeholder="D1VS to Send..." />
                     </div>
                     <div class="col-md-8">
                         <label>Recipient Address</label>
-                        <input type="text" class="form-control roundedCorners recipient-input" placeholder="Address to send D1VS to..." />
+                        <input type="text" class="form-control recipient-input" placeholder="Address to send D1VS to..." />
                     </div>
                 </div>
                 <br />
@@ -461,7 +459,7 @@
                         </small>
                         <br />
                         <br />
-                        <button id="makeItRainTx" class="btn btn-block btn-md btn-success roundedCorners" href="#">Raise Price Floor</button>
+                        <button id="makeItRainTx" class="btn btn-block btn-md btn-success" href="#">Raise Price Floor</button>
                     </div>
                 </div>
                 <br />
@@ -481,21 +479,21 @@
                 <h5 class="modal-title">Username </h5>
                 <div class="row">
                     <div class="col text-center">
-                        <label class="text-white">Enter a name: </label>
-                        <input type="text" name="newUsername" id="newUsername" onchange="checkAvailability()" class="form-control roundedCorners" placeholder="Enter your desired Username" />
+                        <label>Enter a name: </label>
+                        <input type="text" name="newUsername" id="newUsername" onchange="checkAvailability()" class="form-control" placeholder="Enter your desired Username" />
                         <small>Max. 12 Letters/numbers, no spaces!</small>
                         <hr />
-                        <p class="text-center">Username Available: <span id="availableStatus" class="text-white"></span></p>
+                        <p class="text-center">Username Available: <span id="availableStatus"></span></p>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col text-center">
-                        <button onclick="checkAvailability()" class="btn btn-block btn-md btn-warning roundedCorners">Check Availability</button>
+                        <button onclick="checkAvailability()" class="btn btn-block btn-md btn-warning">Check Availability</button>
                     </div>
 
                     <div id="registerButtonArea" class="col text-center" style="display: none;">
-                        <button onclick="registerName()" class="btn btn-block btn-md btn-success roundedCorners">Register (25 TRX)</button>
+                        <button onclick="registerName()" class="btn btn-block btn-md btn-success">Register (25 TRX)</button>
                     </div>
                 </div>
                 <br />
@@ -542,7 +540,7 @@
                 <div class="row">
                     <div class="col text-center">
                         <input id="ref-url" class="form-control text-center text-secondary" value="" readonly="" /><br />
-                        <small class="text-white">When others use your link to buy D1VS, you get a 3&#37; commission!</small>
+                        <small>When others use your link to buy D1VS, you get a 3&#37; commission!</small>
                     </div>
                 </div>
                 <br />
@@ -617,7 +615,7 @@
                 <h5 class="modal-title">Receive TRX</h5>
                 <div class="row">
                     <div class="col text-center">
-                        <img id="qrImage" src="#" class="roundedCorners" alt="Your Crop Address as a QR Code"><br />
+                        <img id="qrImage" src="#" alt="Your Crop Address as a QR Code"><br />
                         <small>Scan this QR Code to tip <span class="username">Player</span>!</small>
                         <br />
                         <br />

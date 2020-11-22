@@ -30,7 +30,7 @@
     <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true">
+<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
     <div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" data-sidebar-type="default">
         <div class="sticky-alerts"></div>
         <nav class="navbar">
@@ -72,10 +72,10 @@
                 <div class="sidebar-divider"></div>
                 <br />
                 <div class="row">
-                    <div class="col text-center animatedZoom"><a href="https://twitter.com/FunctionIsland" target="_blank"><i class="fab fa-twitter text-white"></i></a></div>
-                    <div class="col text-center animatedZoom"><a href="https://t.me/FunctionIsland" target="_blank"><i class="fab fa-telegram text-white"></i></a></div>
-                    <div class="col text-center animatedZoom"><a href="https://discord.gg/FmCEbPU" target="_blank"><i class="fab fa-discord text-white"></i></a></div>
-                    <div class="col text-center animatedZoom"><a href="https://github.com/FunctionIsland" target="_blank"><i class="fab fa-github text-white"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://twitter.com/FunctionIsland" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://t.me/FunctionIsland" target="_blank"><i class="fab fa-telegram"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://discord.gg/FmCEbPU" target="_blank"><i class="fab fa-discord"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://github.com/FunctionIsland" target="_blank"><i class="fab fa-github"></i></a></div>
                 </div>
             </div>
         </div>
@@ -86,79 +86,110 @@
                     <div class="col-lg-9">
 
                         <section id="faqsSection" class="animate__animated animate__fadeIn">
+                            <div class="container">
+                                <div class="row">
+                                <div class="col text-center">
+                                    <br />
+                                    <h3>Help &amp; FAQs</h3>
+                                </div>
+                            </div>
                             <div class="row">
-                            <div class="col text-center">
-                                <br />
-                                <h3 class="text-white">Help &amp; FAQs</h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 text-center">
-                                <div class="card text-white glassPanel silverBorder roundedCorners">
-                                    <div class="card-header text-left">What is D1VS Game?</div>
-                                    <div class="card-body">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col text-left">
-                                                    <p>D1VS is an hourglass smart contract, enabling anyone holding &quot;D1VS&quot; to earn TRX dividends, proportionate to supply shares held. Price and value fluctuates at the mercy of holder actions.</p>
-                                                </div>
-                                            </div>
+                                <div class="col text-left">
+                                    <details class="collapse-panel w-800 mw-full mt-20" open>
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100%, mt-20 = margin-top: 2rem (20px) -->
+                                        <summary class="collapse-header">
+                                            What is D1VS?
+                                        </summary>
+                                        <div class="collapse-content">
+                                            D1VS is an hourglass smart contract, enabling anyone holding &quot;D1VS&quot; to earn TRX dividends, proportionate to supply shares held. The price and value of D1VS fluctuates at the mercy of holder actions - When holders sell their D1VS and withdraw TRX from the contract, the price and value of D1VS lowers proportionately. Inversely so, as users deposit TRX into the contract, the price and value both inflate proportionately.<br />
+                                            <br />
+                                            This creates the effect of an &quot;automated market&quot;, ensuring you can sell your D1VS at any time, and always receive something for them. With this in mind, it is perfectly possible to use D1VS as somewhat of a &quot;savings vault&quot; which is capable of earning passive TRX dividends, regardless of what other holders do!
                                         </div>
-                                    </div>
-                                </div>
-                                <br />
-                            </div>
+                                    </details>
+                                    <br />
 
-                            <div class="col-md-6 text-center">
-                                <div class="card text-white glassPanel silverBorder roundedCorners">
-                                    <div class="card-header text-left">Why doesn&apos;t D1VS show in my wallet?</div>
-                                    <div class="card-body">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col text-left">
-                                                    <p>D1VS is a special kind of token that may not show correctly with some wallets. So long as you can see your D1VS on the website, your D1VS are safe and ready to be transferred, sold or HODLed on further!</p>
-                                                </div>
-                                            </div>
+                                    <details class="collapse-panel w-800 mw-full">
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                        <summary class="collapse-header">
+                                            How do I buy / sell D1VS?
+                                        </summary>
+                                        <div class="collapse-content">
+                                            To buy or sell D1VS, you will simply need to visit the Function Island website with a browser that has <a href="https://tronlink.org" target="_blank">TronLink</a> installed, or with a mobile Dapp browser like <a href="https://klever.io" target="_blank">Klever Wallet</a>, and go to the &quot;My D1VS&quot; tab. From there, you will be able to transact with the D1VS smart contract, so long as your wallet is unlocked, and you have enough TRX to cover transaction fees.
                                         </div>
-                                    </div>
-                                </div>
-                                <br />
-                            </div>
+                                    </details>
+                                    <br />
 
-                            <div class="col-md-6 text-center">
-                                <div class="card text-white glassPanel silverBorder roundedCorners">
-                                    <div class="card-header text-left">Does Compounding also get a 10% fee?</div>
-                                    <div class="card-body">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col text-left">
-                                                    <p>The Compound function of the D1VS game calls the buy function, so yes - 10% of your TRX Dividends will be distributed to D1VS holders when you compound.</p>
-                                                </div>
-                                            </div>
+                                    <details class="collapse-panel w-800 mw-full">
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                        <summary class="collapse-header">
+                                            Why should I reinvest my dividends?
+                                        </summary>
+                                        <div class="collapse-content">
+                                            Reinvesting your Dividends means you earn more TRX dividends faster! Whenever you reinvest, your dividends are used to buy more D1VS for your bag, thus getting you a bigger portion of the supply. The more you do this, the faster you earn <i>(or, that&apos;s at least the theory!)</i>
                                         </div>
-                                    </div>
-                                </div>
-                                <br />
-                            </div>
+                                    </details>
+                                    <br />
 
-                            <div class="col-md-6 text-center">
-                                <div class="card text-white glassPanel silverBorder roundedCorners">
-                                    <div class="card-header text-left">Can I profit from D1VS?</div>
-                                    <div class="card-body">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col text-left">
-                                                    <p>There is possibility of earning TRX from holding D1VS over time - however, keep in mind that D1VS is a game, not an investment platform. Only spend TRX you can afford to lose - D1VS value is at the mercy of the holders!</p>
-                                                </div>
-                                            </div>
+                                    <details class="collapse-panel w-800 mw-full">
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                        <summary class="collapse-header">
+                                            Can I withdraw my Dividends?
+                                        </summary>
+                                        <div class="collapse-content">
+                                            Yes, you can always withdraw your Dividends at any time - however, it is recommended that you wait until you have at least 3 TRX in dividends before withdrawing, to make your transaction fee worthwhile!
                                         </div>
-                                    </div>
+                                    </details>
+                                    <br />
+
+                                    <details class="collapse-panel w-800 mw-full">
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                        <summary class="collapse-header">
+                                            I want to stop. How do I get out?
+                                        </summary>
+                                        <div class="collapse-content">
+                                            If you would no longer like to earn dividends by holding D1VS, simply follow the instructions to sell D1VS (all of them), and withdraw your TRX. Thank you!
+                                        </div>
+                                    </details>
+                                    <br />
+
+                                    <details class="collapse-panel w-800 mw-full">
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                        <summary class="collapse-header">
+                                            Why doesn&apos;t D1VS show in my wallet, like other tokens?
+                                        </summary>
+                                        <div class="collapse-content">
+                                            D1VS is a special kind of token that may not show correctly with some wallets. So long as you can see your D1VS on the website, your D1VS are safe and ready to be transferred, sold or HODLed on further!
+                                        </div>
+                                    </details>
+                                    <br />
+
+                                    <details class="collapse-panel w-800 mw-full">
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                        <summary class="collapse-header">
+                                            Does reinvesting also get a 10% fee?
+                                        </summary>
+                                        <div class="collapse-content">
+                                            The reinvest function of the D1VS contract calls the buy function, so yes - 10% of your TRX Dividends will be distributed to D1VS holders when you reinvest your dividends.
+                                        </div>
+                                    </details>
+                                    <br />
+
+                                    <details class="collapse-panel w-800 mw-full">
+                                        <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                        <summary class="collapse-header">
+                                            Can I profit from D1VS?
+                                        </summary>
+                                        <div class="collapse-content">
+                                            There is possibility of earning TRX from holding D1VS over time - however, keep in mind that D1VS is a game, not an investment platform. Only spend TRX you can afford to lose - D1VS value is at the mercy of the holders!
+                                        </div>
+                                    </details>
+                                    <br />
+
                                 </div>
-                                <br />
                             </div>
-                        </div>
+                            </div>
                         </section>
-                         
+
                         <hr />
                         <br />
 
@@ -166,9 +197,9 @@
                             <div class="container">
                                 <br />
                                 <div class="row">
-                                    <div class="col text-center text-white">
-                                        <h4 class="text-white">Disclaimer</h4>
-                                        <small class="text-white">
+                                    <div class="col text-center">
+                                        <h4>Disclaimer</h4>
+                                        <small>
                                             &quot;Function Island&quot;, is provided on an &quot;As-Is&quot; basis, with zero guarantee of bug-free operation, profit or stability.<br />
                                             The Dapps and games hosted on this site have <b>NOT</b> been audited - rigorous public audit is encouraged!<br />
                                             You should only use or deposit funds you are willing to lose on Function Island.<br />
@@ -199,11 +230,11 @@
                         </div>
                         <div class="row">
                             <div class="col text-center animatedZoom">
-                                <a href="https://dappradar.com/tron/high-risk/function-island" target="_blank"><img src="assets/img/monitor-logos/dappradar.png" width="30px" height="30px" /></a>
+                                <a href="https://dappradar.com/tron/high-risk/function-island" target="_blank"><img src="assets/img/monitor-logos/dappradar.png" width="30px" height="30px" style="background-color: rgba(0,0,0,0.75); border-radius: 5px;" /></a>
                             </div>
 
                             <div class="col text-center animatedZoom">
-                                <a href="https://www.stateofthedapps.com/dapps/function-island" target="_blank"><img src="assets/img/monitor-logos/stateofthedapps.png" width="30px" height="30px" /></a>
+                                <a href="https://www.stateofthedapps.com/dapps/function-island" target="_blank"><img src="assets/img/monitor-logos/stateofthedapps.png" width="30px" height="30px" style="background-color: rgba(0,0,0,0.75); border-radius: 5px;" /></a>
                             </div>
                         </div>
                         <br />
@@ -237,9 +268,7 @@
         </div>
 
         <nav class="navbar navbar-fixed-bottom">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-question-circle-o mr-5" aria-hidden="true"></i> Help</a></li>
-            </ul>
+            <ul class="navbar-nav ml-auto"></ul>
             <span class="navbar-text">Made with &lt;3, Function Island</span>
         </nav>
     </div>
@@ -290,14 +319,14 @@
                             <span id="rainmakerTokens">0</span> D1VS
                         </b>
                     </div>
-                    
+
                     <div class="col text-center">
                         <b>
                             <img src="assets/img/tron.png" width="45px" height="45px" /><br />
                             <span id="floorTRX">0</span> TRX
                         </b>
                     </div>
-                    
+
                     <div class="col text-center">
                         <b>
                             <img src="assets/img/function-logos/dollar.png" width="45px" height="45px" /><br />
@@ -323,7 +352,7 @@
                         </small>
                         <br />
                         <br />
-                        <button id="makeItRainTx" class="btn btn-block btn-md btn-success roundedCorners" href="#">Raise Price Floor</button>
+                        <button id="makeItRainTx" class="btn btn-block btn-md btn-success" href="#">Raise Price Floor</button>
                     </div>
                 </div>
                 <br />
@@ -343,21 +372,21 @@
                 <h5 class="modal-title">Username </h5>
                 <div class="row">
                     <div class="col text-center">
-                        <label class="text-white">Enter a name: </label>
-                        <input type="text" name="newUsername" id="newUsername" onchange="checkAvailability()" class="form-control roundedCorners" placeholder="Enter your desired Username" />
+                        <label>Enter a name: </label>
+                        <input type="text" name="newUsername" id="newUsername" onchange="checkAvailability()" class="form-control" placeholder="Enter your desired Username" />
                         <small>Max. 12 Letters/numbers, no spaces!</small>
                         <hr />
-                        <p class="text-center">Username Available: <span id="availableStatus" class="text-white"></span></p>
+                        <p class="text-center">Username Available: <span id="availableStatus"></span></p>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col text-center">
-                        <button onclick="checkAvailability()" class="btn btn-block btn-md btn-warning roundedCorners">Check Availability</button>
+                        <button onclick="checkAvailability()" class="btn btn-block btn-md btn-warning">Check Availability</button>
                     </div>
 
                     <div id="registerButtonArea" class="col text-center" style="display: none;">
-                        <button onclick="registerName()" class="btn btn-block btn-md btn-success roundedCorners">Register (25 TRX)</button>
+                        <button onclick="registerName()" class="btn btn-block btn-md btn-success">Register (25 TRX)</button>
                     </div>
                 </div>
                 <br />
@@ -404,7 +433,7 @@
                 <div class="row">
                     <div class="col text-center">
                         <input id="ref-url" class="form-control text-center text-secondary" value="" readonly="" /><br />
-                        <small class="text-white">When others use your link to buy D1VS, you get a 3&#37; commission!</small>
+                        <small>When others use your link to buy D1VS, you get a 3&#37; commission!</small>
                     </div>
                 </div>
                 <br />
@@ -426,13 +455,28 @@
                 <div class="row">
                     <div class="col text-center">
                         <br />
-                        
+
                         <table class="table">
-                            <tr><td><b>Contract Holdings</b></td><td class="text-danger"><span id="contract-trx-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> TRX</td></tr>
-                            <tr><td><b>USD Value</b></td><td class="text-success">&#36;<span style="display: inline" id="supply-value-usd"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> USD</td></tr>
-                            <tr><td><b>Total Supply</b></td><td><span id="contract-token-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> D1VS</td></tr>
-                            <tr><td><b>Contract Value (BTC)</b></td><td class="text-secondary"><span id="supply-value-btc"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> BTC</td></tr>
-                            <tr><td><b>Contract Value (ETH)</b></td><td style="color: #00a7ff;"><span id="supply-value-eth"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> ETH</td></tr>
+                            <tr>
+                                <td><b>Contract Holdings</b></td>
+                                <td class="text-danger"><span id="contract-trx-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> TRX</td>
+                            </tr>
+                            <tr>
+                                <td><b>USD Value</b></td>
+                                <td class="text-success">&#36;<span style="display: inline" id="supply-value-usd"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> USD</td>
+                            </tr>
+                            <tr>
+                                <td><b>Total Supply</b></td>
+                                <td><span id="contract-token-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> D1VS</td>
+                            </tr>
+                            <tr>
+                                <td><b>Contract Value (BTC)</b></td>
+                                <td class="text-secondary"><span id="supply-value-btc"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> BTC</td>
+                            </tr>
+                            <tr>
+                                <td><b>Contract Value (ETH)</b></td>
+                                <td style="color: #00a7ff;"><span id="supply-value-eth"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> ETH</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
@@ -479,7 +523,7 @@
                 <h5 class="modal-title">Receive TRX</h5>
                 <div class="row">
                     <div class="col text-center">
-                        <img id="qrImage" src="#" class="roundedCorners" alt="Your Crop Address as a QR Code"><br />
+                        <img id="qrImage" src="#" alt="Your Crop Address as a QR Code"><br />
                         <small>Scan this QR Code to tip <span class="username">Player</span>!</small>
                         <br />
                         <br />
@@ -510,12 +554,13 @@
     <script src="assets/js/clipboard.min.js"></script>
     <script src="assets/js/common.min.js"></script>
     <script src="assets/js/tronweb.js"></script>
-    
+
     <script src="assets/dapps/hourglass.js"></script>
     <script src="assets/dapps/usernames.js"></script>
 
     <script>
         getUsername()
+
     </script>
 
     <script type="text/javascript">
